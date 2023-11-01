@@ -16,7 +16,7 @@ const Blogs = ({ handelAddBookmark ,handelMarkAsRead}) => {
     }, [])
 
     return (
-        <div className="w-2/3">
+        <div className="md:w-2/3">
             {
                 blogs.map(blog => <Blog
                     key={blog.id}
