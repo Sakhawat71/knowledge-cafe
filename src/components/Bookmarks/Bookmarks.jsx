@@ -1,21 +1,29 @@
 import PropTypes from 'prop-types'
 import Bookmark from '../Bookmark/Bookmark';
 
-const Bookmarks = ({ bookmarks }) => {
+const Bookmarks = ({ bookmarks, readingTime }) => {
 
     return (
-        <div className="w-1/3 bg-[#1111110D] px-6 py-2 rounded-lg">
-            <h2 className="text-2xl font-bold text-center my-3">Bookmarked Blogs : {bookmarks.length}</h2>
+        <div className="w-1/3 space-y-2">
 
-            {
-                bookmarks.map((bookmark,idx) => <Bookmark key={idx} bookmark={bookmark}></Bookmark>)
-            }
+            <div className=' text-center py-4 rounded-xl bg-[#1111110D]'>
+                <h2 className='text-2xl font-bold text-[#6047EC]'>Spent time on read : {readingTime} min</h2>
+            </div>
+
+            <div className=' bg-[#1111110D] px-6 py-2 rounded-lg'>
+                <h2 className="text-2xl font-bold text-center my-3">Bookmarked Blogs : {bookmarks.length}</h2>
+
+                {
+                    bookmarks.map((bookmark, idx) => <Bookmark key={idx} bookmark={bookmark}></Bookmark>)
+                }
+            </div>
         </div>
     )
 }
 
 Bookmarks.propTypes = {
-    bookmarks : PropTypes.array,
+    bookmarks: PropTypes.array,
+    readingTime: PropTypes.number
 }
 
 export default Bookmarks;

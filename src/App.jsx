@@ -15,9 +15,10 @@ function App() {
     }
     const handelMarkAsRead = time =>{
         setReadingTime(readingTime + time);
-
     }
-    console.log(readingTime)
+
+    
+    
     return (
         <>
             <Header></Header>
@@ -30,6 +31,7 @@ function App() {
                 
                 <Bookmarks 
                 bookmarks={bookmarks}
+                readingTime={readingTime}
                 ></Bookmarks>
             </div>
         </>

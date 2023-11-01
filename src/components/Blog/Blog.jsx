@@ -6,7 +6,7 @@ const Blog = ({ blog , handelAddBookmark , handelMarkAsRead}) => {
 
 
     return (
-        <div className='border my-3 mx-10 rounded-md'>
+        <div className='border mb-3 mx-10 rounded-md'>
             <figure >
                 <img className='rounded-md' src={cover} alt={`cover pic of the titel ${title}`} />
             </figure>
