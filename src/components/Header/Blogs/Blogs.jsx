@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import Blog from "../../Blog/Blog";
+import PropTypes from 'prop-types';
 
 
 
@@ -26,5 +27,9 @@ const Blogs = ({handelAddBookmark}) => {
         </div>
     );
 };
+
+Blogs.propTypes = {
+    handelAddBookmark : PropTypes.func,
+}
 
 export default Blogs;

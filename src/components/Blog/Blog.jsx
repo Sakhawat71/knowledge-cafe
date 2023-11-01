@@ -3,7 +3,7 @@ import { CiBookmark } from "react-icons/ci";
 
 const Blog = ({ blog , handelAddBookmark}) => {
     const { cover, title, author, author_img, reading_time, post_date, hashtags } = blog;
-    console.log(blog)
+    // console.log(blog)
 
     return (
         <div className='border my-3 mx-10 rounded-md'>
@@ -37,7 +37,8 @@ const Blog = ({ blog , handelAddBookmark}) => {
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object
+    blog: PropTypes.object,
+    handelAddBookmark : PropTypes.func.isRequired
 }
 
 export default Blog;

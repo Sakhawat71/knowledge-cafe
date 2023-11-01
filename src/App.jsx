@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Bookmark from './components/Bookmark/Bookmark'
+import Bookmarks from './components/Bookmarks/Bookmarks'
 import Blogs from './components/Header/Blogs/Blogs'
 import Header from './components/Header/Header'
 
@@ -18,7 +18,7 @@ function App() {
             <Header></Header>
             <div className='md:flex max-w-7xl mx-auto'>
                 <Blogs handelAddBookmark={handelAddBookmark}></Blogs>
-                <Bookmark></Bookmark>
+                <Bookmarks bookmarks={bookmarks}></Bookmarks>
             </div>
         </>
     )
