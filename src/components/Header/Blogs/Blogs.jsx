@@ -5,31 +5,33 @@ import PropTypes from 'prop-types';
 
 
 
-const Blogs = ({handelAddBookmark}) => {
+const Blogs = ({ handelAddBookmark ,handelMarkAsRead}) => {
 
-    const [blogs,setBlogs] = useState([]);
+    const [blogs, setBlogs] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('blogs.json')
-        .then(res => res.json())
-        .then(data => setBlogs(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setBlogs(data))
+    }, [])
 
     return (
         <div className="w-2/3">
             {
-                blogs.map(blog => <Blog 
-                    key={blog.id} 
-                    handelAddBookmark={handelAddBookmark} 
+                blogs.map(blog => <Blog
+                    key={blog.id}
+                    handelAddBookmark={handelAddBookmark}
                     blog={blog}
-                    ></Blog>)
+                    handelMarkAsRead={handelMarkAsRead}
+                ></Blog>)
             }
         </div>
     );
 };
 
 Blogs.propTypes = {
-    handelAddBookmark : PropTypes.func,
+    handelAddBookmark: PropTypes.func,
+    handelMarkAsRead: PropTypes.func
 }
 
 export default Blogs;
