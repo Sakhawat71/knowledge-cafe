@@ -4,7 +4,7 @@ import Blog from "../../Blog/Blog";
 
 
 
-const Blogs = () => {
+const Blogs = ({handelAddBookmark}) => {
 
     const [blogs,setBlogs] = useState([]);
 
@@ -16,10 +16,12 @@ const Blogs = () => {
 
     return (
         <div className="w-2/3">
-            <h2 className="text-3xl">Blogs</h2>
-            <h3>Total blogs: {blogs.length}</h3>
             {
-                blogs.map(blog => <Blog key={blog.id} blog={blog}></Blog>)
+                blogs.map(blog => <Blog 
+                    key={blog.id} 
+                    handelAddBookmark={handelAddBookmark} 
+                    blog={blog}
+                    ></Blog>)
             }
         </div>
     );
