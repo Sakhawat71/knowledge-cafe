@@ -1,12 +1,12 @@
 [{
         "id": 12452,
         "cover": "https://i.ibb.co/Dgx67tF/1.jpg",
-        "title": "How to get your first job as a self-taught programmer",
+        "title": "How to become a good JavaScript programmer.",
         "author": "John Smith",
         "author_img": "https://i.ibb.co/HHkjq1M/boy1.png",
         "post_date": "2023-10-15",
         "reading_time": "15",
-        "hashtags": ["fiction", "bestseller"]
+        "hashtags": ["JavaScript", "es6"]
     },
     {
         "id": 23597,
@@ -16,36 +16,36 @@
         "author_img": "https://i.ibb.co/cYbTfSf/girl2.jpg",
         "post_date": "2023-09-20",
         "reading_time": "16",
-        "hashtags": ["science", "research"]
+        "hashtags": ["first_job", "self_taught"]
     },
     {
         "id": 33864,
         "cover": "https://i.ibb.co/q1F8zrh/3.png",
-        "title": "How to get your first job as a self-taught programmer",
+        "title": "Want to be a React developer? Then this article is for you.",
         "author": "Emily White",
         "author_img": "https://i.ibb.co/C6Xx2zN/boy2.jpg",
         "post_date": "2023-08-05",
         "reading_time": "12",
-        "hashtags": ["mystery", "suspense"]
+        "hashtags": ["react", "developer"]
     },
     {
         "id": 43695,
         "cover": "https://i.ibb.co/19DZbSY/4.jpg",
-        "title": "How to get your first job as a self-taught programmer",
+        "title": "How to become a good programmer yourself using the Internet?",
         "author": "David Brown",
         "author_img": "https://i.ibb.co/HHkjq1M/boy1.png",
         "post_date": "2023-07-12",
         "reading_time": "8",
-        "hashtags": ["cooking", "recipes"]
+        "hashtags": ["programmer", "Internet"]
     },
     {
         "id": 57512,
         "cover": "https://i.ibb.co/hF6vsFd/pexels-pixabay-39284.jpg",
-        "title": "How to get your first job as a self-taught programmer",
+        "title": "Which device is better for programming?",
         "author": "Linda Green",
         "author_img": "https://i.ibb.co/svkRC0J/girl1.jpg",
         "post_date": "2023-06-25",
         "reading_time": "18",
-        "hashtags": ["travel", "adventure"]
+        "hashtags": ["device", "programming"]
     }
 ]
