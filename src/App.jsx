@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import Bookmarks from './components/Bookmarks/Bookmarks'
 import Blogs from './components/Header/Blogs/Blogs'
 import Header from './components/Header/Header'
+import Bookmarks from './components/Bookmarks/Bookmarks';
 
 function App() {
 
@@ -11,8 +11,7 @@ function App() {
         const newBookmark = [...bookmarks,blog];
         setBookmarks(newBookmark);
     }
-
-    console.log(bookmarks);
+    console.log(bookmarks)
     return (
         <>
             <Header></Header>
